@@ -43,12 +43,12 @@ public class KeyLogger {
             StringBuilder sb = new StringBuilder();
 
             // 1. 왼쪽 스택의 글자들은 스택 특성상 거꾸로 나오므로 나중에 한 번에 뒤집기 위해 순서대로 append
-            for(char c : leftStack) {
+            for (char c : leftStack) {
                 sb.append(c);
             }
 
             // 2. 오른쪽 스택은 이미 LIFO 구조로 뒤집혀 있으므로 pop 하면서 append
-            while(!rightStack.isEmpty()) {
+            while (!rightStack.isEmpty()) {
                 sb.append(rightStack.pop());
             }
 
